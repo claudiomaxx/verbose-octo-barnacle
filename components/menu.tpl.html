@@ -1,0 +1,9 @@
+<div id="menu-bar" class="grid-container fluid show-for-medium">
+    <div class="grid-x grid-margin-x">
+        <div class="box auto cell text-center box-menu" ng-repeat="itemMenu in vm.listaMenu" ng-class="{ 'is-active' : vm.isAtivo(itemMenu.codigo)}"
+            ng-click="vm.navegar(itemMenu.codigo)">
+            <i class="{{itemMenu.icon}} h3 box-menu-icon"></i>
+            <h5 class="heavy box-menu-title">{{itemMenu.nome}}</h5>
+        </div>
+    </div>
+</div>

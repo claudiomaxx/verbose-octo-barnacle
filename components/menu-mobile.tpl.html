@@ -1,0 +1,7 @@
+<div id="menu-bar-mobile" class="show-for-small-only">
+    <ul class="menu expanded text-center">
+        <li ng-repeat="itemMenu in vm.listaMenu" ng-class="{ 'is-active' : vm.isAtivo(itemMenu.codigo)}">
+            <a href ng-click="vm.navegar(itemMenu.codigo)">{{itemMenu.nome}}</a>
+        </li>
+    </ul>
+</div>
